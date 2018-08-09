@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+<groupId>io.annot8</groupId>
+<artifactId>annot8-root</artifactId>
+<version>NONE</version>
+<packaging>pom</packaging>
+
+  <name>Annot8 Root</name>
+  <description>Core interfaces for the Annot8 project</description>
+
+  <modules>
+    <module>common</module>
+    <module>components</module>
+    <module>core</module>
+    <module>conventions</module>
+    <module>default-impl</module>
+    <module>parent</module>
+    <module>testing</module>
+  </modules>
+</project>
