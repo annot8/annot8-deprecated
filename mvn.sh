@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 
-cd parent
+cd annot8-parent
 mvn $@ 
 
-cd ../conventions
+cd ../annot8-conventions
 mvn $@
 
-cd ../core
+cd ../annot8-core
 mvn $@
 
-cd ../common
+cd ../annot8-common
 mvn $@
 
-cd ../testing
+cd ../annot8-testing
 mvn $@
 
-cd ../default-impl
+cd ../annot8-default-impl
 mvn $@
 
-cd ../components
+cd ../annot8-components
 mvn $@
 
 cd ..

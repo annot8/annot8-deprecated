@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 
-cd parent
+cd annot8-parent
 git $@ 
 
-cd ../conventions
+cd ../annot8-conventions
 git $@
 
-cd ../core
+cd ../annot8-core
 git $@
 
-cd ../common
+cd ../annot8-common
 git $@
 
-cd ../testing
+cd ../annot8-testing
 git $@
 
-cd ../default-impl
+cd ../annot8-default-impl
 git $@
 
-cd ../components
+cd ../annot8-components
 git $@
 
 cd ..
