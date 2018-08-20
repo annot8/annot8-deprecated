@@ -5,3 +5,4 @@ conventions/
 default-impl/
 parent/
 testing/
+*.iml
