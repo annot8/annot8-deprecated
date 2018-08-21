@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+mvn $@
+
 cd annot8-parent
 mvn $@ 
 

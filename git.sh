@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+git $@
+
 cd annot8-parent
 git $@ 
 

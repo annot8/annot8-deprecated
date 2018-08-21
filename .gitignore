@@ -1,8 +1,9 @@
-common/
-components/
-core/
-conventions/
-default-impl/
-parent/
-testing/
+annot8-common/
+annot8-components/
+annot8-core/
+annot8-conventions/
+annot8-default-impl/
+annot8-parent/
+annot8-testing/
 *.iml
+
