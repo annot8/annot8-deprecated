@@ -7,3 +7,5 @@ annot8-parent/
 annot8-testing/
 *.iml
 
+.project
+.settings
