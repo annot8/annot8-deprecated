@@ -10,3 +10,4 @@ annot8-testing/
 .project
 .settings
 target
+*.versionsBackup
