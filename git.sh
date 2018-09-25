@@ -3,24 +3,24 @@
 git $@
 
 cd annot8-parent
-git $@ 
+git "$@" 
 
 cd ../annot8-conventions
-git $@
+git "$@"
 
 cd ../annot8-core
-git $@
+git "$@"
 
 cd ../annot8-common
-git $@
+git "$@"
 
 cd ../annot8-testing
-git $@
+git "$@"
 
 cd ../annot8-default-impl
-git $@
+git "$@"
 
 cd ../annot8-components
-git $@
+git "$@"
 
 cd ..
