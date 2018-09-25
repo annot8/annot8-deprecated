@@ -10,7 +10,14 @@
   <packaging>pom</packaging>
 
   <name>Annot8 Root</name>
-  <description>Core interfaces for the Annot8 project</description>
+  <description>Root of all Annot8 project</description>
+
+  <properties>
+    <!-- Skip this particular root module when deploying -->
+    <!-- Note that the annot8-parent resets this for the other projects -->
+    <maven.deploy.skip>true</maven.deploy.skip>
+
+  </properties>
 
   <modules>
     <module>annot8-common</module>
@@ -21,4 +28,20 @@
     <module>annot8-parent</module>
     <module>annot8-testing</module>
   </modules>
+
+  <profiles>
+    <!-- When running in release mode, we only want to deploy specific modules to Maven -->
+    <profile>
+      <id>release</id>
+      <modules>
+        <module>annot8-common</module>
+        <module>annot8-components</module>
+        <module>annot8-core</module>
+        <module>annot8-conventions</module>
+        <module>annot8-default-impl</module>
+        <module>annot8-parent</module>
+        <module>annot8-testing</module>
+      </modules>
+    </profile>
+  </profiles>
 </project>
