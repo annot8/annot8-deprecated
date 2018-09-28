@@ -1,0 +1,29 @@
+language: java
+sudo: false
+install: true
+addons:
+  sonarcloud:
+    organization: annot8
+    token:
+      secure: TODO
+jdk:
+- openjdk10
+script:
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package -P travis
+- mvn spotless:check
+after_success:
+- mvn jacoco:report coveralls:report -P travis
+- mvn sonar:sonar -P travis
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+  - "$HOME/.sonar/cache"
+deploy:
+  provider: script
+  script: mvn -s .travis.settings.xml deploy -P travis -DskipTests
+  skip_cleanup: true
+  on:
+    branch: master
+notifications:
+  slack:
+    secure: TODO
