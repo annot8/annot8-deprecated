@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 
-git clone git@github.com:annot8/annot8-common.git annot8-common
 
-git clone git@github.com:annot8/annot8-components.git annot8-components
+repos=( "annot8-common" "annot8-components" "annot8-conventions" "annot8-core" "annot8-default-impl" "annot8-parent" "annot8-testing" )
 
-git clone git@github.com:annot8/annot8-conventions.git annot8-conventions
+for r in "${repos[@]}"
+do
+	git clone git@github.com:annot8/$r.git $r
+	cd $r
+	./setup.sh
+	cd -
+done
 
-git clone git@github.com:annot8/annot8-core.git annot8-core
 
-git clone git@github.com:annot8/annot8-default-impl.git annot8-default-impl
-
-git clone git@github.com:annot8/annot8-parent.git annot8-parent
-
-git clone git@github.com:annot8/annot8-testing.git annot8-testing
 
