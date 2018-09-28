@@ -26,4 +26,5 @@ deploy:
     branch: master
 notifications:
   slack:
-    secure: TODO
+    rooms:
+      secure: TODO
