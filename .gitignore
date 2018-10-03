@@ -11,3 +11,4 @@ annot8-testing/
 .settings
 target
 *.versionsBackup
+.idea
