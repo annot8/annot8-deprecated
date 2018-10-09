@@ -5,8 +5,8 @@ repos=( "annot8-common" "annot8-components" "annot8-conventions" "annot8-core" "
 
 for r in "${repos[@]}"
 do
-	git clone git@github.com:annot8/$r.git $r
-	cd $r
+	git clone git@github.com:annot8/${r}.git ${r}
+	cd ${r}
 	./setup.sh
 	cd -
 done

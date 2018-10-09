@@ -16,8 +16,8 @@ cp travis.settings.xml $1/.travis.settings.xml
 
 cd $1
 read -p "Enter Slack API Token: " SLACK_TOKEN
-travis encrypt $SLACK_TOKEN --add notifications.slack.rooms
+travis encrypt ${SLACK_TOKEN} --add notifications.slack.rooms
 
 read -p "Enter SonarCloud API Token: " SONAR_TOKEN
-travis encrypt $SONAR_TOKEN --add addons.sonarcloud.token
+travis encrypt ${SONAR_TOKEN} --add addons.sonarcloud.token
 cd -

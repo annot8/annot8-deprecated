@@ -2,10 +2,10 @@
 
 read -p "Enter version:" version
 
-mvn versions:set -DnewVersion=$version
+mvn versions:set -DnewVersion=${version}
 
 cd annot8-parent
-mvn versions:set -DnewVersion=$version
+mvn versions:set -DnewVersion=${version}
 cd -
 
 ./git.sh commit -am "Bump to version $version"

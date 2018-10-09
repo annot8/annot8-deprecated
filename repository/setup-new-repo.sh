@@ -15,15 +15,15 @@ git checkout -b new-repo-setup
 mkdir -p hooks
 cd -
 
-cp files/* $ABS_PATH/.
-cp scripts/* $ABS_PATH/.
-cp hooks/* $ABS_PATH/hooks/.
+cp files/* ${ABS_PATH}/.
+cp scripts/* ${ABS_PATH}/.
+cp hooks/* ${ABS_PATH}/hooks/.
 
 cd travis
-./setup-travis.sh $ABS_PATH
+./setup-travis.sh ${ABS_PATH}
 cd -
 
-cd $ABS_PATH
+cd ${ABS_PATH}
 git add setup.sh
 git add hooks/*
 git add LICENSE
